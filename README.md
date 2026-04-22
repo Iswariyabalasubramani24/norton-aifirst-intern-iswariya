@@ -156,7 +156,7 @@ Fix the following issues in the app codebase. 1. Add @SerializedName to every fi
 **Prompt 3:**
 Review the fixes. Check if anything was missed, if any new issue was introduced, and whether there is anything else in those same files that could still be improved. Then scan the rest of the codebase for similar patterns that have the same problems and flag those too. Keep the feedback focused and only call out issues that needs attention.
 
-**Response:**
+**Final Response:**
 One residual coupling concern
 The presentation layer now has a direct dependency on Retrofit. This is the correct pragmatic fix for a small app, but it does couple a ViewModel to the network library. The clean-architecture alternative is to catch HttpException in ScanRepositoryImpl and rethrow a typed domain exception (e.g., a sealed ScanException class), keeping the data layer as the only place that knows about Retrofit. Not a blocker, but worth the note if the app grows.
 Nothing else in the wider codebase
