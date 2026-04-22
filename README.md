@@ -91,9 +91,7 @@ It generated the DTO classes correctly, but initially grouped multiple DTOs into
 
 **My refinement:**  
 I refactored the output so that each DTO lived in its own file:
-- `MessageDto.kt`
 - `AnalysisRequestDto.kt`
-- `ChoiceDto.kt`
 - `AnalysisResponseDto.kt`
 
 I made this change because separate files made the structure cleaner, easier to navigate, and more aligned with clean architecture practices.
