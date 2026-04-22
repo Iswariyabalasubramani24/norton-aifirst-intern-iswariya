@@ -37,9 +37,9 @@ This also aligns strongly with the **AI-first engineering focus** of this role.
 
 ### ▶️ Step 1 — Open the Project
 1. Launch Android Studio Panda 3 Patch 1  
-2. Go to **File → Open**  
-3. Select the `ScamShield` folder  
-4. Allow Gradle to sync  
+2. **File → Open**
+3. Select the `ScamMessageDetection` folder
+4. Sync Gradle 
 
 ### 🔑 Step 2 — Configure the API Key
 
